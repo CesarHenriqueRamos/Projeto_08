@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Saite automobilistico">
+    <meta name="keywords" content="carro,venda">
+    <meta name="author" content="Cesar Henrique Ramos">
+    <title>Vendas</title>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../img/logo.jpg">
+            </div>
+            <nav class="desktop">
+                <ul>
+                    <li><a  href="../index.html">Home</a></li>
+                    <li><a style="color: red;" href="venda.html">Venda</a></li>
+                    <li><a  href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                    <h2><i class="fa fa-bars"></i></h2>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a style="color: red;" href="venda.html">Venda</a></li>
+                        <li><a  href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+        </div><!--container-->
+    </header> 
+    <section class="vendas">
+        <div class="container">
+                <div style="margin-top: 50px;" class="topo-destaque ">
+                        <div class="linha"></div>
+                        <div class="texto-destaque"><h2>Vendas</h2></div>
+                        <div class="linha"></div>
+                    </div>
+            
+            <div class="vendas-direita">
+                    <div class="conteudo-destaque-vendas">
+                            <div class="w33">
+                                <img src="../img/carro1.jpg">
+                                <h2>Volkswagen Karmann-ghia</h2>
+                                <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                                <div class="bt-destaque">
+                                    <h2><a href="#">Mais Detalhes</a></h2>
+                                </div>
+                            </div>
+                            <div class="w33">
+                                <img src="../img/carro1.jpg">
+                                <h2>Volkswagen Karmann-ghia</h2>
+                                <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                                <div class="bt-destaque">
+                                    <h2><a href="#">Mais Detalhes</a></h2>
+                                </div>
+                            </div>
+                            <div class="w33">
+                                <img src="../img/carro1.jpg">
+                                <h2>Volkswagen Karmann-ghia</h2>
+                                <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                                <div class="bt-destaque">
+                                    <h2><a href="#">Mais Detalhes</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        
+            </div>
+            <div class="clear"></div>
+        </div><!--container-->
+    </section>   
+    
+</body>
+<footer>
+    <div class="w50">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a style="color: red;" href="venda.html">Venda</a></li>
+                <li><a  href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+    </div>
+    <div class="w50">
+        <h2>Todos Os Direitos Reservados</h2>
+    </div>
+    <div class="clear"></div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		$('nav.mobile h2').click(function(){
+			$('nav.mobile ul').slideToggle();
+		});
+	</script>
+</html>

@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+/*classes auciliares*/
+.container{
+    width: 100%;
+    padding: 0 2%;
+}
+.clear{
+    clear: both;
+}
+.w100{
+    float: left;
+    width: 100%;
+}
+.w50{
+    float: left;
+    width: 50%;
+}
+.w33{
+    float: left;
+    width: 33.3%;
+}
+/*header*/
+header{
+    border-bottom: 3px solid red;
+}
+header.nao{
+    border-bottom: none;
+}
+.logo{
+    padding: 15px 0;
+    width: 30%;
+    float: left;
+}
+nav.desktop{
+    float: right;
+    width: 70%;
+   padding-left: 30px;
+}
+nav.desktop ul{
+    float: right;
+    padding-top: 60px;
+    
+}
+nav.desktop li{
+    display: inline-block;
+    padding: 0px 20px;
+    
+}
+nav.desktop a{
+    text-decoration: none;
+    font-size: 25px;
+    font-style: italic;
+    color: black;
+}
+nav.mobile{
+    width: 70%;
+     float: right;
+     
+}
+nav.mobile h2{
+    float: right;   
+    display: none;
+}
+nav.mobile ul{
+    float: right;
+    width: 100%;
+    display: none;
+}
+nav.mobile li{
+    display: inline-block;
+    padding: 5px 5px;
+    width: 100%;
+    text-align: right;
+}
+nav.mobile a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+}
+/*section baner*/
+section.baner{
+    height: 100%;
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.baner .container{
+    padding: 40px;
+}
+div.servico-baner{
+    padding:0;
+}
+div.vermelho{
+    background-image: url('../img/box-text.png');
+    background-repeat: no-repeat;
+    height: 60px;
+    padding: 10px 25px;
+    font-style: italic;
+    color: white;
+    font-size: 25px;
+   margin-top: 20px;
+}
+div.branco{
+    background-image: url('../img/box-white-text.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 60px;
+    padding: 8px 25px;    
+   margin-top: 20px;  
+}
+div.branco p{    
+    font-style: italic;
+    font-size: 25px;
+}
+/*section destaque*/
+section.destaque{
+    padding: 50px 0;
+}
+div.linha{
+width: 38%;
+border-bottom: 3px solid black ;
+float: left;
+height: 20px;
+margin: 0;
+}
+div.texto-destaque{
+    width: 24%;
+    float: left;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 0;
+}
+div.conteudo-destaque img{
+    width: 95%;
+    height: 300px;
+}
+div.conteudo-destaque p{
+    font-size: 14px;
+    font-style: italic;
+    padding: 5px 0;
+}
+div.conteudo-destaque h2{
+    font-size: 16px;
+    font-style: italic;
+    padding: 5px 0;
+    
+}
+div.bt-destaque{
+    background-color: #EB2D2D;
+    border-bottom: 5px solid #B21E1E;
+    width: 40%;
+    color: white;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 5px;
+    text-align: center;
+}
+div.bt-destaque h2 a{    
+    font-size: 14px;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+/*section servico*/
+section.servico{
+    padding: 50px 0;
+}
+section.servico .container{
+    padding: 0;
+}
+div.box-servico{
+    padding: 30px 100px;
+    background-color: #242424;
+    color: white;
+   height:300px;
+}
+div.box-servico ul{
+    width: 60%; 
+    display: inline-block; 
+    padding-top: 15px;
+}
+div.bt-servico{
+    width: 120px;
+    display: inline-block;
+    background-color: #EB2D2D;
+    border-bottom: 5px solid #B21E1E;
+    padding: 3px 10px;
+}
+div.bt-servico h2{
+    text-align: center;
+}
+div.bt-servico a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+div.box-depoimento{
+    background-color: #EB2D2D;
+    padding: 60px 40px;
+    color: white;
+    height:300px;
+}
+div.img-esquerda{
+    width: 30px;
+    float: left;
+    padding-top: 25px;
+}
+div.img-direita{
+    width: 30px;
+    float: left;
+    padding-top: 25px;
+    padding-left: 10px;
+}
+div.nome{
+    float: right;
+    padding-top: 25px;
+}
+/*form*/
+section.form{
+    padding-bottom: 100px;
+}
+form{
+    width: 60%;
+    margin: 30px 20% 100px 20%;
+    
+}
+form input[type = text], textarea{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+}
+form input[type = email]{
+    width: 90%;
+    margin-top: 10px;
+    padding: 5px;
+}
+form input[type=submit]{
+   margin: 15px 40%;
+   padding: 5px 35px;
+   width: 20%;
+   background-color: #EB2D2D;
+   border-bottom: 5px solid #B21E1E;
+   border-top: none;
+   border-left: none;
+   border-right:none ;
+   color: white;
+} 
+form textarea{
+    height: 120px;
+    resize: none;
+}
+/*footer*/
+footer{
+    background:#242424 ;
+    color:white ;
+    padding: 30px 30px;
+}
+footer h2{
+ font-size: 25px;
+ font-style: italic;
+ text-align: right;
+}
+footer li{
+    display: inline-block;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+/*vendas*/
+/*conteiner vendas direita*/
+div.vendas-direita{
+    width: 60%;
+    padding: 15px 2%;
+    float: left;
+}
+div.texto-destaque{
+    width: 24%;
+    float: left;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 0;
+}
+div.conteudo-destaque-vendas img{
+    width: 95%;
+    height:300px;
+}
+div.conteudo-destaque-vendas p{
+    font-size: 14px;
+    font-style: italic;
+    padding: 5px 0;
+}
+div.conteudo-destaque-vendas h2{
+    font-size: 16px;
+    font-style: italic;
+    padding: 5px 0;
+    
+}
+div.bt-destaque{
+    background-color: #EB2D2D;
+    border-bottom: 5px solid #B21E1E;
+    width: 120px;
+    color: white;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+div.bt-destaque h2 a{    
+    font-size: 14px;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+/*container vendas esquerda*/
+div.vendas-esquerda{
+    width: 40%;
+    padding: 0 15px;
+    float: left;
+}
+/*barra de preço*/
+.barra-preco{
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    border-radius: 20px;
+    position: relative;
+}
+.barra-preco-fill{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgb(250,250,250),rgb(200,200,200));
+}
+.pointer-barra{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: -13px;
+    top: -3px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, rgb(250,250,250),rgb(200,200,200));
+    border: 1px solid #777;
+}
+
+div.vendas-esquerda h2{
+    font-weight: normal;
+    padding: 20px 0;
+}
+div.valor-esquerda{
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+div.valor-direita{
+    width: 50%;
+    text-align: right;
+    float: left;
+}
+div.vendas-esquerda form{
+    padding: 15px 2%;
+    width: 80%;
+    margin: 0;
+}
+div.checkbox{
+   display: block;
+   padding-top: 10px;
+}
+label{
+    margin-left: 15px;
+}
+input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    
+}
+/*sobre*/
+.container-sobre{
+    width: 60%;
+    margin: 15px 20%;
+}
+.imagem-sobre{
+    width: 100%;
+    height: 500px;
+    background: rgb(220,220,220);
+}
+.imagem-pequena{
+    width: 250px;
+    height: 250px;
+    background: rgb(220,220,220);
+    float: left;
+    padding-top: 15px;
+    margin-bottom: 25px;
+}
+div.texto-sobre{
+    padding: 25px 0;
+}
+div.texto-sobre h2{
+    padding: 5px 0;
+    font-weight: normal;
+}
+div.texto{
+    width: calc(100% - 250px);
+    float: left;
+    padding: 15px 25px;
+    
+}
+/*modulo expancivo*/
+@media screen and (max-width:900px){
+
+    div.box-servico ul{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    div.bt-servico{
+        display: block;
+        
+    }
+    form{
+        width: 70%;
+        margin: 15px 15% 15px 15%;
+    }
+    .imagem-sobre{
+        width: 100%;
+        height: 400px;
+    }
+    .imagem-pequena{
+        width: 200px;
+        height: 200px;
+    }
+    div.conteudo-destaque img{
+        width: 95%;
+        min-height: 200px;
+        
+    }
+}
+@media screen and (max-width:720px){
+    .w33{
+        width: 100%;
+        padding: 15px 2%;
+    }
+    nav.desktop{
+        display: none;
+    }
+    nav.mobile{
+        display: block;
+    }
+    nav.mobile h2{
+        display: block;
+    }
+    div.box-servico{
+        width: 100%;
+    }
+    div.box-depoimento{
+        width: 100%;
+    }
+    form{
+        width: 90%;
+        margin: 15px 5% 15px 5%;
+    }
+    footer div.w50 h2{
+        width: 300px;
+        text-align: center;
+        margin: 0 50%;
+    }
+    footer ul{
+        display: none;
+    }
+    .imagem-sobre{
+        width: 100%;
+        height: 300px;
+    }
+    .imagem-pequena{
+        width: 100%;
+        height: 300px;
+    }
+    div.texto{
+        width: 100%;
+    }
+    div.w33{
+       padding: 0 8%;
+    }
+    div.conteudo-destaque img{
+        width: 400px;
+        height: 300px;
+    }
+}
+@media screen and (max-width:500px){
+    footer div.w50 h2{
+        margin: 0 30%;
+    }
+
+}
